@@ -1,0 +1,18 @@
+One operator:
+1 + 1
+2
+
+2 operators:
+2 + 5 * 3
+2 + 15
+17
+
+2 * 2 * 2
+4 * 2
+8
+
+2 operators, one pair of parentheses:
+2 * (2 + 4)
+2 * 8
+16
+

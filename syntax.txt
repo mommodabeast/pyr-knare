@@ -1,0 +1,27 @@
+Valid syntax:
+
+a + b * c / d 
+where a, b, c and d are numbers.
+
+Rules)
+Input containing n numbers must have n-1 operators unless n=1 or n=0
+The number of parentheses in input must be divisible by 2.
+
+
+
+Exceptions)
+1. empty string
+2. 1 number
+
+Exception handling)
+1. Print an empty string
+2. Print the same number
+
+Invalid syntax:
+
+Cases)
+Input contains n>1 numbers and operators > n-1: Syntax error: Too many operators in given expression.
+Input contains n>1 numbers and operators < n-1: Syntax error: Too few operators in given expression.
+
+
+examples)
