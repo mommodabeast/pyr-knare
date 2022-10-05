@@ -1,0 +1,10 @@
+example: 
+2 + 1 + 4 * 5 / 2
+
+Steps:
+1. Call a function that does error checking.
+2. If no errors are found, put all operators and numbers in a tuple.
+3. Convert "numbers" into floating-point values.
+4. return the tuple
+
+"Sub" step (2):
