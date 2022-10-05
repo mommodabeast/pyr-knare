@@ -16,8 +16,8 @@ def parser(string):
     string = string.replace(",", ".")
 
     # Get numbers and operators
-    # Note: + and - cannot be next to each other or else python will raise an error. 
-    matched_substrings = re.findall(r"[+-]?-\d+.\d+|-\d+|\d+.\d+|\d+|[+*-/]", string)
+    # Matches numbers (including negative numbers), parentheses and the operators +, -, * and /. 
+    matched_substrings = re.findall(r"[+-]?-\d+.\d+|-\d+|\d+.\d+|\d+|[+*-/()]", string)
     error_code = error_checker()
     if error_code != None:
         return error_code
@@ -29,5 +29,5 @@ def parser(string):
    
 
 if __name__ == "__main__":
-    expression = parser("1 + 1,1223+2   / 3 * 4 + -1,2 - 1")
+    expression = parser("1 + 1,1223+2 + (1 +2)  / 3 * 4 + -1,2 - 1")
     print(expression)
